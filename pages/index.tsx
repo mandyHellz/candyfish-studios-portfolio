@@ -10,8 +10,8 @@ const Home: NextPage = () => {
     <DefaultLayout>
       <Head>
         <title>Candyfish Studios</title>
-        <link rel="icon" href="./favicon.ico" />
       </Head>
+
       <div>
         <AboutSection />
         <ServicesSection />
