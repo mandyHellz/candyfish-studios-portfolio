@@ -1,22 +1,11 @@
 import "tailwindcss/tailwind.css";
 import type { AppProps } from "next/app";
-import Head from "next/head";
+import "../styles/global.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Head>
-        <style>
-          {`
-              body {
-                margin: 0px;
-                padding: 0;
-                box-sizing: border-box;
-              }
-            `}
-        </style>
-      </Head>
-      <div className="font-Montserrat font-light text-gray-800">
+      <div className="font-Montserrat font-normal text-white">
         <Component {...pageProps} />
       </div>
     </>

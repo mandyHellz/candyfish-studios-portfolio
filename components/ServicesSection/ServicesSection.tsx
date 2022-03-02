@@ -2,12 +2,12 @@ import Card from "../Cards/Card";
 
 const ServicesSection = () => {
   return (
-    <div className="services">
-      <div className="description">
-        <p>
+    <div className="services min-w-xs min-h-90 flex flex-col xl:flex-row items-center justify-between px-5 xl:px-16 py-20">
+      <div className="description flex-1 pb-12 xl:pb-0 xl:pr-20">
+        <h2 className="pb-20 overflow-hidden leading-none text-4xl md:text-6xl">
           High <span>quality</span> services
-        </p>
-        <div className="cards">
+        </h2>
+        <div className="cards flex flex-col xl:flex-row gap-8 items-center justify-center xl:flex-wrap">
           <Card
             icon="../img/clock.svg"
             title="Efficient"
@@ -30,8 +30,12 @@ const ServicesSection = () => {
           />
         </div>
       </div>
-      <div className="image-div">
-        <img src="./img/home2.png" alt="camera" />
+      <div className="image flex-1 overflow-hidden">
+        <img
+          src="./img/home2.png"
+          alt="camera"
+          className="object-cover w-full xl:h-105"
+        />
       </div>
     </div>
   );

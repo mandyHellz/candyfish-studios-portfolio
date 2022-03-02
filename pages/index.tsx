@@ -12,11 +12,11 @@ const Home: NextPage = () => {
         <title>Candyfish Studios</title>
         <link rel="icon" href="./favicon.ico" />
       </Head>
-      <>
+      <div>
         <AboutSection />
         <ServicesSection />
         <FaqSection />
-      </>
+      </div>
     </DefaultLayout>
   );
 };

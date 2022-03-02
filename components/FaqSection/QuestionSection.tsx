@@ -8,13 +8,16 @@ const Question = ({
   answer: string;
 }) => {
   return (
-    <div className="question">
-      <p>{question}</p>
-      <div className="answer">
-        <p>{answerTitle}</p>
-        <p>{answer}</p>
+    <>
+      <div className="question py-8">
+        <p className="cursor-pointer py-8 text-2xl font-bold">{question}</p>
+        <div className="answer py-4 flex flex-col gap-4 text-gray-400">
+          <p>{answerTitle}</p>
+          <p>{answer}</p>
+        </div>
       </div>
-    </div>
+      <div className="faq-line border-b border-gray-50 w-full"></div>
+    </>
   );
 };
 
