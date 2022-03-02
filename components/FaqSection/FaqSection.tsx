@@ -3,11 +3,12 @@ import Question from "./QuestionSection";
 const FaqSection = () => {
   return (
     <>
-      <div className="faq min-w-xs min-h-90 px-5 xl:px-16 py-20 text-center md:text-left">
-        <p className="pb-20 overflow-hidden leading-none text-4xl md:text-6xl">
-          Any Questions <span>FAQ</span>
-        </p>
-        <div className="questions">
+      <div className="faq min-w-xs min-h-90vh py-20 text-center md:text-left">
+        <div className="pb-20 overflow-hidden leading-none text-4xl md:text-6xl">
+          <p>Any Questions</p>
+          <span>FAQ</span>
+        </div>
+        <div className="questions flex flex-col gap-8">
           <Question
             question="How do I start?"
             answerTitle="Lorem ipsum dolor sit amet"

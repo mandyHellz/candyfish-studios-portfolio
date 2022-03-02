@@ -2,12 +2,12 @@ import Card from "../Cards/Card";
 
 const ServicesSection = () => {
   return (
-    <div className="services min-w-xs min-h-90 flex flex-col xl:flex-row items-center justify-between px-5 xl:px-16 py-20">
+    <div className="services min-w-xs min-h-90vh flex flex-col xl:flex-row items-center justify-between py-20">
       <div className="description flex-1 pb-12 xl:pb-0 xl:pr-20">
-        <h2 className="pb-20 overflow-hidden leading-none text-4xl md:text-6xl">
+        <h2 className="pb-20 overflow-hidden leading-none text-4xl md:text-6xl text-center xl:text-left">
           High <span>quality</span> services
         </h2>
-        <div className="cards flex flex-col xl:flex-row gap-8 items-center justify-center xl:flex-wrap">
+        <div className="cards flex flex-col xl:flex-row gap-8 items-center justify-center xl:justify-start xl:flex-wrap">
           <Card
             icon="../img/clock.svg"
             title="Efficient"
@@ -34,7 +34,7 @@ const ServicesSection = () => {
         <img
           src="./img/home2.png"
           alt="camera"
-          className="object-cover w-full xl:h-105"
+          className="object-cover w-full xl:h-80vh"
         />
       </div>
     </div>

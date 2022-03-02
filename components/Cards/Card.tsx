@@ -15,7 +15,7 @@ const Card = ({
           <p className="ml-4 bg-white text-black p-4">{title}</p>
         </div>
       </div>
-      <p className="w-3/4 pt-8 pb-16 text-left">{description}</p>
+      <p className="w-3/4 pt-8 text-left">{description}</p>
     </div>
   );
 };

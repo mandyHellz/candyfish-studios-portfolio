@@ -8,22 +8,26 @@ module.exports = {
         Satisfy: ['Satisfy', 'cursive', 'sans-serif'],
         Yellowtail: ['Yellowtail', 'cursive', 'sans-serif'],
         Montserrat: ['Montserrat', 'sans-serif'],
+        Lobster: ['Lobster', 'cursive', 'sans-serif'],
       },
       height: {
-        // 70vh
-        '100': '39.8rem',
-        // 80vh
-        '105': '45.5rem',
-        // 90vh
-        '110': '51.1rem'
+        '70vh': '39.8rem',
+        '80vh': '45.5rem',
+        '90vh': '51.1rem'
       }
     },
     minHeight: {
-      '90': '51.1rem',
+      '10vh': '5.5rem',
+      '90vh': '51.1rem',
     },
     minWidth: {
       xs: '375px',
       sm: '640px',
+    },
+    maxWidth: {
+      container: '1280px',
+      menu: '1345px',
+      page: '1920px',
     },
   },
   variants: {

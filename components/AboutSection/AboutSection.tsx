@@ -1,7 +1,7 @@
 const AboutSection = () => {
   return (
-    <div className="about min-w-xs min-h-90 flex flex-col xl:flex-row items-center justify-between px-5 xl:px-16 py-20 xl:py-40">
-      <div className="description xl:flex-1 pb-12 xl:pb-0 xl:pr-20 xl:text-left">
+    <div className="about min-w-xs min-h-90vh xl:flex items-center justify-between py-20 xl:py-40">
+      <div className="description xl:flex-1 pb-12 xl:pb-0 xl:pr-20 text-center xl:text-left">
         <div className="title overflow-hidden leading-none text-4xl md:text-6xl">
           <h2>We work to make</h2>
           <h2>
@@ -19,7 +19,7 @@ const AboutSection = () => {
         <img
           src="./img/home1.png"
           alt="worker-with-cam"
-          className="object-cover w-full xl:h-105"
+          className="object-cover w-full xl:h-80vh"
         />
       </div>
     </div>

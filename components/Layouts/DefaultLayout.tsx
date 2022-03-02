@@ -1,14 +1,12 @@
-import React from 'react';
-import Footer from './Footer';
-import Header from './Header'
+import React from "react";
+import Footer from "./Footer";
+import Header from "./Header";
 
 const DefaultLayout: React.FC = ({ children }) => {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className="max-w-page">
       <Header />
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        {children}
-      </main>
+      <main className="max-w-menu mx-auto px-5">{children}</main>
       <Footer />
     </div>
   );

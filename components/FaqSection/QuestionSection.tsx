@@ -9,7 +9,7 @@ const Question = ({
 }) => {
   return (
     <>
-      <div className="question py-8">
+      <div className="question">
         <p className="cursor-pointer py-8 text-2xl font-bold">{question}</p>
         <div className="answer py-4 flex flex-col gap-4 text-gray-400">
           <p>{answerTitle}</p>
