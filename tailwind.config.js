@@ -5,9 +5,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        satisfy: ['Satisfy', 'cursive', 'sans-serif'],
-        yellowtail: ['Yellowtail', 'cursive', 'sans-serif'],
-        montserrat: ['Montserrat', 'sans-serif'],
+        Satisfy: ['Satisfy', 'cursive', 'sans-serif'],
+        Yellowtail: ['Yellowtail', 'cursive', 'sans-serif'],
+        Montserrat: ['Montserrat', 'sans-serif'],
       },
     },
   },
