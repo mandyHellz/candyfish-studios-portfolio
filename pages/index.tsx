@@ -7,7 +7,7 @@ import ServicesSection from "../components/ServicesSection/ServicesSection";
 
 const Home: NextPage = () => {
   return (
-    <DefaultLayout>
+    <>
       <Head>
         <title>Candyfish Studios</title>
       </Head>
@@ -17,7 +17,7 @@ const Home: NextPage = () => {
         <ServicesSection />
         <FaqSection />
       </div>
-    </DefaultLayout>
+    </>
   );
 };
 

@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const menus = [
   { menuName: "About Us", link: "/" },
-  { menuName: "Our Work", link: "/our-work" },
-  { menuName: "Contact Us", link: "/contact-us" },
+  { menuName: "Our Work", link: "/work" },
+  { menuName: "Contact Us", link: "/contact" },
 ];
 
 export default function Header() {
@@ -15,7 +15,7 @@ export default function Header() {
             <Link href="/">
               <div className="flex items-center justify-start gap-2">
                 <img
-                  src="./candyfish-logo.png"
+                  src="https://github.com/mandyHellz/candyfish-studios-portfolio/blob/master/public/candyfish-logo.png?raw=true"
                   alt="logo"
                   className="w-20 flex-shrink-0 cursor-pointer"
                 />

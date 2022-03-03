@@ -18,6 +18,7 @@ module.exports = {
     },
     minHeight: {
       '10vh': '5.5rem',
+      '80vh': '43rem',
       '90vh': '51.1rem',
       '100vh': '57.3rem',
     },
