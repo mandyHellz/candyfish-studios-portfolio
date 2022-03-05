@@ -1,4 +1,5 @@
 import Question from "./QuestionSection";
+import { AnimateSharedLayout } from "framer-motion";
 
 const FaqSection = () => {
   return (
@@ -8,28 +9,30 @@ const FaqSection = () => {
           <p>Any Questions</p>
           <span>FAQ</span>
         </div>
-        <div className="questions flex flex-col gap-8">
-          <Question
-            question="How do I start?"
-            answerTitle="Lorem ipsum dolor sit amet"
-            answer="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quisquam!"
-          />
-          <Question
-            question="Daily schedule"
-            answerTitle="Lorem ipsum dolor sit amet"
-            answer="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quisquam!"
-          />
-          <Question
-            question="Payment methods"
-            answerTitle="Lorem ipsum dolor sit amet"
-            answer="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quisquam!"
-          />
-          <Question
-            question="What products do you offer?"
-            answerTitle="Lorem ipsum dolor sit amet"
-            answer="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quisquam!"
-          />
-        </div>
+        <AnimateSharedLayout>
+          <div className="questions flex flex-col gap-8">
+            <Question
+              question="How do I start?"
+              answerTitle="Lorem ipsum dolor sit amet"
+              answer="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quisquam!"
+            />
+            <Question
+              question="Daily schedule"
+              answerTitle="Lorem ipsum dolor sit amet"
+              answer="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quisquam!"
+            />
+            <Question
+              question="Payment methods"
+              answerTitle="Lorem ipsum dolor sit amet"
+              answer="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quisquam!"
+            />
+            <Question
+              question="What products do you offer?"
+              answerTitle="Lorem ipsum dolor sit amet"
+              answer="Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quisquam!"
+            />
+          </div>
+        </AnimateSharedLayout>
       </div>
     </>
   );

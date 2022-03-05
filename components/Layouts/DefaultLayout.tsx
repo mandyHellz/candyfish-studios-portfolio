@@ -8,9 +8,9 @@ import Header from "./Header";
 
 const DefaultLayout: React.FC = ({ children }) => {
   return (
-    <div className="max-w-page font-Montserrat font-normal text-white">
+    <div className="max-w-page mx-auto font-Montserrat font-normal text-white">
       <Header />
-      <main className="max-w-menu mx-auto px-5">{children}</main>
+      <main className="mx-auto">{children}</main>
       <Footer />
     </div>
   );

@@ -9,7 +9,7 @@ const menus = [
 export default function Header() {
   return (
     <>
-      <div className="max-w-page min-w-xs mx-auto min-h-10vh shadow-md z-50">
+      <div className="Header min-w-xs mx-auto min-h-10vh shadow-md z-50">
         <nav className="navbar px-5 mx-auto min-h-10vh max-w-menu flex flex-row items-center justify-between">
           <div className="flex-1">
             <Link href="/">

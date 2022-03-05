@@ -37,6 +37,8 @@ function Data() {
       mainImg:
         "https://github.com/developedbyed/the-creative-react-course-capture/blob/master/src/img/goodtimes-small.png?raw=true",
       url: "/work/good-times",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quisquam ducimus esse possimus dolores? Qui nulla reiciendis quibusdam accusamus repellendus!",
       secondaryImg:
         "https://github.com/developedbyed/the-creative-react-course-capture/blob/master/src/img/good-times2.jpg?raw=true",
       awards: [
@@ -66,6 +68,8 @@ function Data() {
       mainImg:
         "https://github.com/developedbyed/the-creative-react-course-capture/blob/master/src/img/theracer-small.png?raw=true",
       url: "/work/the-racer",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos quisquam ducimus esse possimus dolores? Qui nulla reiciendis quibusdam accusamus repellendus!",
       secondaryImg:
         "https://github.com/developedbyed/the-creative-react-course-capture/blob/master/src/img/the-racer2.jpg?raw=true",
       awards: [

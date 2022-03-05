@@ -1,4 +1,10 @@
+import { motion } from "framer-motion";
 import Link from "next/link";
+import {
+  fade,
+  lineAnimation,
+  photoAnimation,
+} from "../../animations/animation";
 
 const SinglePortfolio = ({
   workTitle,
@@ -11,10 +17,16 @@ const SinglePortfolio = ({
 }) => {
   return (
     <div className="portfolio flex flex-col gap-12">
-      <p className="text-5xl leading-none">{workTitle}</p>
-      <div className="line h-1 bg-green-600"></div>
+      <motion.p variants={fade} className="text-5xl leading-none">
+        {workTitle}
+      </motion.p>
+      <motion.div
+        variants={lineAnimation}
+        className="line h-1 bg-bg-violet-400"
+      ></motion.div>
       <Link href={linkTo}>
-        <img
+        <motion.img
+          variants={photoAnimation}
           src={workImage}
           alt="athlete"
           className="w-100 h-70vh object-cover"

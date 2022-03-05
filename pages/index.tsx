@@ -2,8 +2,9 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import AboutSection from "../components/AboutSection/AboutSection";
 import FaqSection from "../components/FaqSection/FaqSection";
-import DefaultLayout from "../components/Layouts/DefaultLayout";
 import ServicesSection from "../components/ServicesSection/ServicesSection";
+import { motion } from "framer-motion";
+import { pageAnimation } from "../animations/animation";
 
 const Home: NextPage = () => {
   return (
@@ -12,11 +13,17 @@ const Home: NextPage = () => {
         <title>Candyfish Studios</title>
       </Head>
 
-      <div>
+      <motion.div
+        exit="exit"
+        variants={pageAnimation}
+        initial="hidden"
+        animate="show"
+        className="max-w-menu px-5 mx-auto"
+      >
         <AboutSection />
         <ServicesSection />
         <FaqSection />
-      </div>
+      </motion.div>
     </>
   );
 };
