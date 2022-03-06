@@ -11,6 +11,7 @@ module.exports = {
         Lobster: ['Lobster', 'cursive', 'sans-serif'],
       },
       height: {
+        '10.2vh': '5.8rem',
         '70vh': '39.8rem',
         '80vh': '45.5rem',
         '90vh': '51.1rem'

@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="max-w-page flex items-center justify-center w-full h-24 border-t font-montserrat font-thin">
-      <div className="max-w-menu px-5 mx-auto">
+    <footer className="Footer shadow-md z-30">
+      <div className="max-w-menu mx-auto flex items-center justify-center h-24 font-montserrat font-thin">
         <a
           className="flex items-center justify-center"
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"

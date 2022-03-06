@@ -4,13 +4,13 @@ import {
   fade,
   photoAnimation,
 } from "../../animations/animation";
-import Curves from "../Curves/Curves";
+import Curves from "../Svg/Curves";
 
 const AboutSection = () => {
   return (
-    <div className="about min-w-xs min-h-90vh xl:flex items-center justify-between py-20 xl:py-32">
+    <div className="about min-h-90vh flex flex-col xl:flex-row items-center xl:justify-between pt-48 pb-20 lg:pt-32">
       <div className="description z-20 xl:flex-1 pb-12 xl:pb-0 xl:pr-20 text-center xl:text-left">
-        <div className="title overflow-hidden leading-none text-4xl md:text-6xl">
+        <div className="title leading-none text-3xl md:text-6xl">
           <motion.h2 variants={titleAnimation}>We work to make</motion.h2>
           <motion.h2 variants={titleAnimation}>
             the most <span>creative dreams</span>
@@ -19,7 +19,7 @@ const AboutSection = () => {
         </div>
         <motion.p
           variants={fade}
-          className="text-xl md:text-xl text-gray-400 py-12"
+          className="text-lg md:text-xl text-gray-400 py-12"
         >
           Contact us to make any animation video ideas that you have come true.
           Our team is made up of incredible and creative professionals.
@@ -31,14 +31,12 @@ const AboutSection = () => {
       <div className="image flex-1 overflow-hidden z-20">
         <motion.img
           variants={photoAnimation}
-          // initial="hidden"
-          // animate="show"
           src="./img/home1.png"
           alt="worker-with-cam"
           className="object-cover w-full xl:h-80vh"
         />
       </div>
-      <Curves className="absolute left-0 w-full z-10" />
+      <Curves className="absolute left-0 w-full z-10 hidden xl:block" />
     </div>
   );
 };

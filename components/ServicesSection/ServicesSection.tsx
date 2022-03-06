@@ -1,8 +1,25 @@
+import { motion } from "framer-motion";
 import Card from "../Cards/Card";
+import { scrollReveal } from "../../animations/animation";
+import { useInView } from "react-intersection-observer";
+import { useAnimation } from "framer-motion";
+import { useScroll } from "../../hooks/useScroll";
 
 const ServicesSection = () => {
+  // const [element, controls] = useScroll();
+  const controls = useAnimation();
+  const [element, view] = useInView({ threshold: 0.3 });
+
+  view ? controls.start("show") : controls.start("hidden");
+
   return (
-    <div className="services min-w-xs min-h-90vh flex flex-col xl:flex-row items-center justify-between py-20">
+    <motion.div
+      variants={scrollReveal}
+      animate={controls}
+      initial="hidden"
+      ref={element}
+      className="services min-h-90vh flex flex-col xl:flex-row items-center justify-between py-20"
+    >
       <div className="description flex-1 pb-12 xl:pb-0 xl:pr-20">
         <h2 className="pb-20 overflow-hidden leading-none text-4xl md:text-6xl text-center xl:text-left">
           High <span>quality</span> services
@@ -37,7 +54,7 @@ const ServicesSection = () => {
           className="object-cover w-full xl:h-80vh"
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default ServicesSection;

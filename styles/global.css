@@ -14,6 +14,7 @@
 
 body {
   background: #1b1b1b;
+  overflow-x: hidden;
 }
 
 button {
@@ -37,11 +38,19 @@ span {
 }
 
 .Header {
-  background: rgba(255, 255, 255, 0);
-  backdrop-filter: blur(4.1px);
-  -webkit-backdrop-filter: blur(4.1px);
+  background: rgba(40, 40, 40, 0.87);
+  backdrop-filter: blur(3.9px);
+  -webkit-backdrop-filter: blur(3.9px);
   position: fixed;
   margin-top: 0px;
+  left: 0;
+  width: 100%;
+}
+
+.Footer {
+  background: rgba(40, 40, 40, 0.87);
+  backdrop-filter: blur(3.9px);
+  -webkit-backdrop-filter: blur(3.9px);
   width: 100%;
 }
 
@@ -58,7 +67,7 @@ span {
 .frame-4 {
   position: fixed;
   left: 0;
-  top: 10%;
+  top: 0%;
   width: 100%;
   height: 100vh;
   z-index: 2;
@@ -75,4 +84,16 @@ span {
 }
 .frame-4 {
   background: rgb(124 58 237);
+}
+
+.underline-header {
+  height: 0.3rem;
+  background: rgb(124 58 237);
+  width: 0%;
+}
+
+@media (max-width: 1300px) {
+  .underline-header {
+    left: 0%;
+  }
 }

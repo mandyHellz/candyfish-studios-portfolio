@@ -6,14 +6,8 @@ import {
   slider,
   sliderContainer,
 } from "../../animations/animation";
-import { useEffect } from "react";
 
 const OurWork = () => {
-  if (typeof window === "undefined") return <></>;
-  useEffect(() => {
-    window.scroll({ top: 0 });
-  }, []);
-
   return (
     <>
       <Head>
@@ -26,7 +20,7 @@ const OurWork = () => {
         initial="hidden"
         animate="show"
         style={{ background: "#fff" }}
-        className="work min-h-100vh overflow-hidden py-20 text-black"
+        className="work min-h-100vh overflow-hidden pt-40 lg:pt-32 pb-20 text-gray-800"
       >
         <motion.div variants={sliderContainer}>
           <motion.div variants={slider} className="frame-1"></motion.div>
@@ -36,21 +30,27 @@ const OurWork = () => {
         </motion.div>
 
         <div className="movies flex flex-col gap-20 xl:gap-40 max-w-menu px-5 py-10 mx-auto">
-          <SinglePortfolio
-            workTitle="The Athlete"
-            workImage="./img/athlete-small.png"
-            linkTo="/work/the-athlete"
-          />
-          <SinglePortfolio
-            workTitle="The Racer"
-            workImage="./img/theracer-small.png"
-            linkTo="/work/the-racer"
-          />
-          <SinglePortfolio
-            workTitle="The Goodtimes"
-            workImage="./img/goodtimes-small.png"
-            linkTo="/work/good-times"
-          />
+          <div>
+            <SinglePortfolio
+              workTitle="The Athlete"
+              workImage="./img/athlete-small.png"
+              linkTo="/work/the-athlete"
+            />
+          </div>
+          <div>
+            <SinglePortfolio
+              workTitle="The Racer"
+              workImage="./img/theracer-small.png"
+              linkTo="/work/the-racer"
+            />
+          </div>
+          <div>
+            <SinglePortfolio
+              workTitle="The Goodtimes"
+              workImage="./img/goodtimes-small.png"
+              linkTo="/work/good-times"
+            />
+          </div>
         </div>
       </motion.div>
     </>

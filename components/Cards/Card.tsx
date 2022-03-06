@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 const Card = ({
   icon,
   title,
@@ -8,7 +10,7 @@ const Card = ({
   description: string;
 }) => {
   return (
-    <div className="card basis-80">
+    <motion.div className="card basis-80">
       <div className="icon flex items-center">
         <img src={icon} alt="icons" className="h-16 w-16" />
         <div className="w-40">
@@ -16,7 +18,7 @@ const Card = ({
         </div>
       </div>
       <p className="w-3/4 pt-8 text-left">{description}</p>
-    </div>
+    </motion.div>
   );
 };
 

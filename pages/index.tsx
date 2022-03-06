@@ -5,6 +5,7 @@ import FaqSection from "../components/FaqSection/FaqSection";
 import ServicesSection from "../components/ServicesSection/ServicesSection";
 import { motion } from "framer-motion";
 import { pageAnimation } from "../animations/animation";
+import { useEffect } from "react";
 
 const Home: NextPage = () => {
   return (
@@ -18,7 +19,7 @@ const Home: NextPage = () => {
         variants={pageAnimation}
         initial="hidden"
         animate="show"
-        className="max-w-menu px-5 mx-auto"
+        className="max-w-menu px-5 mx-auto overflow-hidden"
       >
         <AboutSection />
         <ServicesSection />

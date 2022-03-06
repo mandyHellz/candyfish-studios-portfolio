@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+import { useRouter } from "next/dist/client/router";
 import Link from "next/link";
 
 const menus = [
@@ -7,31 +9,44 @@ const menus = [
 ];
 
 export default function Header() {
+  const router = useRouter();
+  const url = router.asPath;
+  console.log(url);
+
   return (
     <>
-      <div className="Header min-w-xs mx-auto min-h-10vh shadow-md z-50">
-        <nav className="navbar px-5 mx-auto min-h-10vh max-w-menu flex flex-row items-center justify-between">
+      <div className="Header shadow-md z-30">
+        <nav className="navbar px-5 pt-4 lg:pt-2 mx-auto min-h-10vh max-w-menu flex flex-col lg:flex-row items-center justify-between">
           <div className="flex-1">
             <Link href="/">
-              <div className="flex items-center justify-start gap-2">
+              <div className="flex items-center lg:justify-start gap-2">
                 <img
                   src="https://github.com/mandyHellz/candyfish-studios-portfolio/blob/master/public/candyfish-logo.png?raw=true"
                   alt="logo"
                   className="w-20 flex-shrink-0 cursor-pointer"
                 />
-                <p className="font-Lobster text-2xl font-medium text-gray-100 cursor-pointer">
+                <p className="font-Lobster text-2xl font-medium tracking-wider text-gray-100 cursor-pointer">
                   Candyfish Studios.
                 </p>
               </div>
             </Link>
           </div>
           <div className="flex-1">
-            <ul className="links flex items-center justify-end gap-20 relative cursor-pointer">
+            <ul className="links flex items-center text-center pt-8 pb-4 lg:pt-0 lg:pb-0 lg:justify-end gap-20 relative cursor-pointer">
               {menus.map((menu) => (
-                <li key={menu.link}>
+                <li
+                  key={menu.link}
+                  className="flex flex-col items-center gap-1"
+                >
                   <Link href={menu.link}>
                     <p>{menu.menuName}</p>
                   </Link>
+                  <motion.div
+                    transition={{ duration: 0.75 }}
+                    initial={{ width: "0%" }}
+                    animate={{ width: url === menu.link ? "100%" : "0%" }}
+                    className="underline-header"
+                  ></motion.div>
                 </li>
               ))}
             </ul>
