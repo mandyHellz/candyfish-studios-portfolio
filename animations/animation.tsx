@@ -20,11 +20,24 @@ export const pageAnimation = {
   },
 };
 
-export const titleAnimation = {
-  hidden: { y: 200 },
+export const container = {
+  hidden: { opacity: 1 },
   show: {
+    opacity: 1,
+    transition: {
+      duration: 0.5,
+      when: "beforeChildren",
+      staggerChildren: 0.3,
+    },
+  },
+};
+
+export const titleAnimation = {
+  hidden: { y: 200, opacity: 0 },
+  show: {
+    opacity: 1,
     y: 0,
-    transition: { duration: 0.75, ease: "easeOut" },
+    transition: { duration: 0.8, ease: "easeInOut" },
   },
 };
 

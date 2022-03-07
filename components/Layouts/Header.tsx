@@ -16,18 +16,18 @@ export default function Header() {
   return (
     <>
       <div className="Header shadow-md z-30">
-        <nav className="navbar px-5 pt-4 lg:pt-2 mx-auto min-h-10vh max-w-menu flex flex-col lg:flex-row items-center justify-between">
+        <nav className="navbar px-5 py-4 lg:py-2 mx-auto min-h-10vh max-w-menu flex flex-col lg:flex-row items-center justify-between">
           <div className="flex-1">
             <Link href="/">
               <div className="flex items-center lg:justify-start gap-2">
                 <img
-                  src="https://github.com/mandyHellz/candyfish-studios-portfolio/blob/master/public/candyfish-logo.png?raw=true"
+                  src="./photo_logo.png"
                   alt="logo"
-                  className="w-20 flex-shrink-0 cursor-pointer"
+                  className="w-40 flex-shrink-0 cursor-pointer"
                 />
-                <p className="font-Lobster text-2xl font-medium tracking-wider text-gray-100 cursor-pointer">
+                {/* <p className="font-Lobster text-2xl font-medium tracking-wider text-gray-100 cursor-pointer">
                   Candyfish Studios.
-                </p>
+                </p> */}
               </div>
             </Link>
           </div>

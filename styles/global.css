@@ -74,16 +74,16 @@ span {
 }
 
 .frame-1 {
-  background: rgb(196 181 253);
+  background: #ff8efb;
 }
 .frame-2 {
-  background: rgb(167 139 250);
+  background: #8ed2ff;
 }
 .frame-3 {
-  background: rgb(139 92 246);
+  background: #8effa0;
 }
 .frame-4 {
-  background: rgb(124 58 237);
+  background: rgb(167 139 250);
 }
 
 .underline-header {

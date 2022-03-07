@@ -4,19 +4,18 @@ import AboutSection from "../components/AboutSection/AboutSection";
 import FaqSection from "../components/FaqSection/FaqSection";
 import ServicesSection from "../components/ServicesSection/ServicesSection";
 import { motion } from "framer-motion";
-import { pageAnimation } from "../animations/animation";
-import { useEffect } from "react";
+import { container, pageAnimation } from "../animations/animation";
 
 const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Candyfish Studios</title>
+        <title>Candyfish Photography</title>
       </Head>
 
       <motion.div
         exit="exit"
-        variants={pageAnimation}
+        variants={container}
         initial="hidden"
         animate="show"
         className="max-w-menu px-5 mx-auto overflow-hidden"
