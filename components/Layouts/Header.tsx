@@ -20,26 +20,26 @@ export default function Header() {
           <div className="flex-1">
             <Link href="/">
               <div className="flex items-center lg:justify-start gap-2">
-                <img
+                {/* <img
                   src="./photo_logo.png"
                   alt="logo"
-                  className="w-40 flex-shrink-0 cursor-pointer"
-                />
-                {/* <p className="font-Lobster text-2xl font-medium tracking-wider text-gray-100 cursor-pointer">
+                  className="w-36 sm:w-40 flex-shrink-0 cursor-pointer"
+                /> */}
+                <p className="font-Lobster text-2xl font-medium tracking-wider text-gray-100 cursor-pointer">
                   Candyfish Studios.
-                </p> */}
+                </p>
               </div>
             </Link>
           </div>
           <div className="flex-1">
-            <ul className="links flex items-center text-center pt-8 pb-4 lg:pt-0 lg:pb-0 lg:justify-end gap-20 relative cursor-pointer">
+            <ul className="links flex items-center text-center pt-8 pb-1 lg:pt-0 lg:pb-0 lg:justify-end gap-10 sm:gap-20 relative cursor-pointer">
               {menus.map((menu) => (
                 <li
                   key={menu.link}
                   className="flex flex-col items-center gap-1"
                 >
                   <Link href={menu.link}>
-                    <p>{menu.menuName}</p>
+                    <p className="whitespace-nowrap">{menu.menuName}</p>
                   </Link>
                   <motion.div
                     transition={{ duration: 0.75 }}
